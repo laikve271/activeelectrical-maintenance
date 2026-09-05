@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Active Electrical & Maintenance provides reliable electrical installation, repairs and maintenance across Gawler, the Barossa Valley and surrounding areas. Call 0433 471 518." />
+  <meta name="description" content="Active Electrical & Maintenance provides reliable electrical installation, repairs and maintenance across Gawler, the Barossa Valley and Adelaide Plains. Call 0433 471 518." />
   <meta name="theme-color" content="#05070a" />
-  <title>Electrician Gawler & Barossa | Active Electrical & Maintenance</title>
+  <title>Electrician Gawler, Barossa & Adelaide Plains | Active Electrical & Maintenance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -373,6 +373,75 @@ footer{padding:44px 0 24px;background:#030507}.footer-grid{display:grid;grid-tem
   }
 }
 
+
+
+/* 2026-09 hero/header refinement — targeted only */
+@media (min-width: 921px) {
+  .site-header .container,
+  .hero .container {
+    width: min(calc(100% - 64px), 1500px);
+  }
+
+  .nav-wrap {
+    height: 104px;
+  }
+
+  .brand .top-logo-exact {
+    width: 360px !important;
+    max-width: 32vw !important;
+    max-height: 96px !important;
+    transform: scale(1.12);
+    transform-origin: left center;
+  }
+
+  .hero {
+    min-height: 650px;
+    padding: 105px 0 115px;
+    display: flex;
+    align-items: center;
+    background-image:
+      linear-gradient(90deg, rgba(3,5,7,.97) 0%, rgba(3,5,7,.90) 28%, rgba(3,5,7,.66) 48%, rgba(3,5,7,.26) 68%, rgba(3,5,7,.10) 100%),
+      linear-gradient(180deg, rgba(3,5,7,.04), rgba(3,5,7,.22)),
+      url('images/active-electrical-ute-hero.png');
+    background-size: cover;
+    background-position: center 58%;
+    background-repeat: no-repeat;
+  }
+
+  .hero-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-copy {
+    max-width: 810px;
+  }
+
+  .hero h1 {
+    max-width: 820px;
+    font-size: clamp(64px, 6.2vw, 102px);
+    text-shadow: 0 3px 22px rgba(0,0,0,.42);
+  }
+
+  .hero-lead {
+    max-width: 700px;
+    color: #d0d7e0;
+    text-shadow: 0 2px 16px rgba(0,0,0,.52);
+  }
+}
+
+@media (max-width: 920px) {
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(3,5,7,.76) 0%, rgba(3,5,7,.92) 68%, rgba(3,5,7,.98) 100%),
+      url('images/active-electrical-ute-hero.png');
+    background-size: cover;
+    background-position: 58% center;
+    background-repeat: no-repeat;
+  }
+  .hero-grid { display:block; }
+  .hero-copy { max-width: 720px; }
+}
 </style>
   <script type="application/ld+json">
   {
@@ -413,23 +482,13 @@ footer{padding:44px 0 24px;background:#030507}.footer-grid{display:grid;grid-tem
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="eyebrow"><span></span> ACTIVE ELECTRICAL &amp; MAINTENANCE</div>
-          <h1>Local electrician for <em>Gawler &amp; the Barossa.</em></h1>
-          <p class="hero-lead">Reliable electrical installation, repairs and maintenance across Gawler, the Barossa Valley and surrounding areas — with clear communication and quality workmanship.</p>
+          <h1>Local electrician for <em>Gawler, Barossa &amp; Adelaide Plains.</em></h1>
+          <p class="hero-lead">Reliable electrical installation, repairs and maintenance across Gawler, the Barossa Valley and Adelaide Plains — with clear communication and quality workmanship.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:0433471518">Call 0433 471 518</a>
             <a class="btn btn-secondary" href="mailto:activeelm@gmail.com">Email us</a>
           </div>
           <div class="licence-pill">SA Licence: <strong>PGE221952</strong></div>
-        </div>
-
-        <div class="hero-card reveal delay-1">
-          <div class="hero-logo-frame">
-            <img src="images/active-electrical-ute.jpg" alt="Active Electrical & Maintenance" />
-          </div>
-          <div class="quick-contact">
-            <a href="tel:0433471518"><span>Phone</span><strong>0433 471 518</strong></a>
-            <a href="mailto:activeelm@gmail.com"><span>Email</span><strong>activeelm@gmail.com</strong></a>
-          </div>
         </div>
       </div>
     </section>
