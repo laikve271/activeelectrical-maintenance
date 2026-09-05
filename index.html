@@ -738,6 +738,12 @@ footer{padding:44px 0 24px;background:#030507}.footer-grid{display:grid;grid-tem
       </div>
       <a href="#top" class="back-top">Back to top ↑</a>
     </div>
+    <div class="container site-credit">
+      <span>Website by</span>
+      <a href="https://laikvedigital.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Laikve Digital website">
+        <img src="images/laikve-digital-logo.png" alt="Laikve Digital">
+      </a>
+    </div>
     <div class="container footer-bottom">© <span id="year"></span> Active Electrical &amp; Maintenance. All rights reserved.</div>
   </footer>
 
@@ -836,6 +842,43 @@ document.getElementById('year').textContent = new Date().getFullYear();
   });
 
 </script>
+
+<style>
+/* 2026-09 exact uploaded header logo fix — cropped only, no regeneration */
+.site-header{background:#000 !important;}
+@media (min-width: 921px) {
+  .nav-wrap{height:104px;}
+  .brand .top-logo-exact{
+    width:340px !important;
+    height:auto !important;
+    max-width:none !important;
+    max-height:88px !important;
+    object-fit:contain !important;
+    background:#000 !important;
+    transform:none !important;
+  }
+}
+@media (max-width: 920px) {
+  .brand .top-logo-exact{
+    width:230px !important;
+    height:auto !important;
+    max-height:68px !important;
+    object-fit:contain !important;
+    background:#000 !important;
+    transform:none !important;
+  }
+}
+</style>
+
+
+<style>
+/* Laikve Digital site credit */
+.site-credit{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 0 4px;color:#748296;font-size:12px;}
+.site-credit a{display:inline-flex;align-items:center;opacity:.9;transition:opacity .2s ease;}
+.site-credit a:hover{opacity:1;}
+.site-credit img{display:block;width:76px;height:auto;}
+@media(max-width:600px){.site-credit{padding-top:16px}.site-credit img{width:68px;}}
+</style>
 </body>
 </html>
 
